@@ -8,6 +8,10 @@ def main():
     print("=== Student Records Demo ===")
     add_student("Ngozi", 74)
 
+    if not students:
+        print("No students recorded yet.")
+        return
+
     print("\nCurrent students:")
     for s in students:
         print(f"  {s['name']}: {s['score']}")
