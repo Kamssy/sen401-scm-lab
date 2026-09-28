@@ -1,7 +1,7 @@
 from pydantic import ValidationError
-
-from students import students, add_student, average_score, median_score
+from students import students, add_student
 from utils.helpers import highest_score, lowest_score
+from utils.stats import average_score, median_score
 
 def print_table(data) -> None:
     """Print students ranked by score in an aligned table."""
